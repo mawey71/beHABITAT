@@ -20,8 +20,6 @@ elixir(function(mix) {
         'resources/assets/css/app.css'
     ],'public/assets/css/behabitat.css');
 
-    mix.version('public/assets/css/behabitat.css');
-
     mix.copy('resources/assets/font-awesome', 'public/assets/font-awesome')
     .copy('resources/assets/fonts', 'public/assets/fonts')
     .copy('resources/assets/img', 'public/assets/img');
@@ -32,6 +30,6 @@ elixir(function(mix) {
         'resources/assets/js/app.js'
     ],'public/assets/js/behabitat.js');
 
-    mix.version('public/assets/js/behabitat.js');
+    mix.version(['public/assets/css/behabitat.css','public/assets/js/behabitat.js']);
 
 });

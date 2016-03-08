@@ -4,6 +4,9 @@ namespace behabitat\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use Illuminate\Database\Eloquent\Model; //añadido porsiaca
+use Illuminate\Database\Eloquent\SoftDeletes; //para los softdeletes
+
 class User extends Authenticatable
 {
     use SoftDeletes;
