@@ -28,30 +28,30 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/', 'PagesController@welcome');
     
-    Route::get('/home', [
+    Route::get('home',[
         'as'   => 'home',
         'uses' => 'PagesController@home'
     ]);
 
-    Route::get('/about', [
+    Route::get('about', [
         'as'   => 'about',
         'uses' => 'PagesController@about'
     ]);
 
 
-	Route::get('/contacto', [
+	Route::get('contacto', [
     	'as'   => 'contacto',
         'uses' => 'EmailController@mostrarForm'
     ]);
-    Route::post('/contacto', 'EmailController@enviarEmail');
+    Route::post('contacto', 'EmailController@enviarEmail');
 
 });
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/home', 'PagesController@home');
-    Route::get('/admin/home', [
+    //Route::get('home', 'PagesController@home');
+    Route::get('admin/home', [
         'as' => 'admin.home', 
         'uses' => 'AdminController@home']);
 });

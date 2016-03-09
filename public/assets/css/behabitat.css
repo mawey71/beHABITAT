@@ -97,12 +97,7 @@ footer {
         height: 70%;
     }
 }
-
-.ocultar {
-	display:none;
-}
-/* nuevo */
-
+/*********** inicio estilos welcome page ***************/
 .welcome {
     width: 100%;
     height: 100%;
@@ -134,4 +129,9 @@ footer {
     font-size: 4.5em;
     font-weight: 700;
 }
+a:hover {
+    transform: scale(1.1);
+}
+/*********** fin estilos welcome page ***************/
+
 /*# sourceMappingURL=behabitat.css.map */
