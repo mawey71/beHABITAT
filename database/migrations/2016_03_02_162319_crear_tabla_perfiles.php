@@ -17,10 +17,8 @@ class CrearTablaPerfiles extends Migration
             $table->enum('rol', ['cliente', 'proveedor']);
             $table->string('nombre');
             $table->string('primer_apellido');
-            $table->string('segundo_apellido');
-            $table->string('nif')->unique()->nullable();
-            $table->string('razon_social');
-            $table->string('cif')->unique()->nullable();
+            $table->string('segundo_apellido')->nullable();
+            $table->string('nif')->unique();
             $table->string('direccion');
             $table->string('localidad');
             $table->string('provincia');

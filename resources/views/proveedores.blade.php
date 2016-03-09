@@ -13,9 +13,9 @@
                     <p class="lead">Podrás comunicarte con ellos, acordar un precio, y finalmente contratar gratuitamente.</p>
                 </div>
             </div>
-            <!-- /.row -->
+            
         </div>
-        <!-- /.container -->
+        
     </section>
     -->
     <section id="about" class="about">

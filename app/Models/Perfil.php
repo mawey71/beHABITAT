@@ -13,7 +13,7 @@ class Perfil extends Model
 	protected $table = 'perfiles';
 
 	protected $fillable = [
-        'rol', 'nombre', 'primer_apellido', 'segundo_apellido', 'nif', 'razon_social', 'cif', 'direccion', 'localidad', 'provincia', 'codigo_postal', 'telefono', 'telefono_movil'
+        'rol', 'nombre', 'primer_apellido', 'segundo_apellido', 'nif', 'direccion', 'localidad', 'provincia', 'codigo_postal', 'telefono', 'telefono_movil'
     ];
 
     protected $hidden = [];
