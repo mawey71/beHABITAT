@@ -129,9 +129,35 @@ footer {
     font-size: 4.5em;
     font-weight: 700;
 }
-a:hover {
-    transform: scale(1.1);
+
+.panel-default>.panel-heading {
+    background-color: #337ab7;
+    color: #fff;
 }
+
+.navbar-fixed-top, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a  {
+	color:#fff;
+	background-color: #337ab7;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover, a.navbar-brand.active {
+	color: #fff;
+	background-color: #286090;
+}
+
+.carousel-indicators .active, ul.nav.navbar-nav.navbar-right > li.active > a  {
+	background-color: #286090;
+	border-color: #286090;
+}
+
+.carousel-control {
+	color: #286090;
+}
+
+.navbar-inverse {
+	border: none;
+}
+
 /*********** fin estilos welcome page ***************/
 
 /*# sourceMappingURL=behabitat.css.map */

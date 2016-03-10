@@ -50,7 +50,6 @@ Route::group(['middleware' => 'web'], function () {
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    //Route::get('home', 'PagesController@home');
     Route::get('admin/home', [
         'as' => 'admin.home', 
         'uses' => 'AdminController@home']);

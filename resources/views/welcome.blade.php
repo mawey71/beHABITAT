@@ -23,7 +23,7 @@
             </div>
         </div>
 
-    <section id="about" class="about">
+<!--     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -57,17 +57,17 @@
         </div>
     </aside>
 
-    <aside class="call-to-action bg-primary">
+    <aside class="call-to-action">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Descubre nuestros servicios para tí...</h2>
-                    <a href="#" class="btn btn-lg btn-light">...Cliente</a>
+                    <a href="#" class="btn btn-lg btn-defa">...Cliente</a>
                     <a href="#" class="btn btn-lg btn-dark">...Proveedor</a>
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
         
         <!-- <script type="text/javascript" src="{{ elixir('assets/js/behabitat.js') }}"></script> -->
         <script type="text/javascript" src="assets/js/behabitat.js"></script>

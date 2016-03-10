@@ -9,7 +9,7 @@
 	        <h1>401</h1>h1>
 	        <h2>No estás autorizado</h2>
 	        <p>No estás autorizado a acceder a esta página...</p>
-	        <a class="btn btn-default" href="{{ route('home') }}">volver a la home</a>
+	        <a class="btn btn-primary" href="{{ route('home') }}">volver a la home</a>
 	    </div>
     </div>
 @endsection
