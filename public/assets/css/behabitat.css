@@ -129,7 +129,7 @@ footer {
     font-size: 4.5em;
     font-weight: 700;
 }
-
+/*********** fin estilos welcome page ***************/
 .panel-default>.panel-heading {
     background-color: #337ab7;
     color: #fff;
@@ -145,6 +145,10 @@ footer {
 	background-color: #286090;
 }
 
+.carousel-indicators li {
+	border-color: #286090;
+}
+
 .carousel-indicators .active, ul.nav.navbar-nav.navbar-right > li.active > a  {
 	background-color: #286090;
 	border-color: #286090;
@@ -154,10 +158,17 @@ footer {
 	color: #286090;
 }
 
+.carousel-control:hover {
+    color: #337ab7;
+}
+
 .navbar-inverse {
 	border: none;
 }
 
+.well {
+	background-color: #ffffff;
+}
 /*********** fin estilos welcome page ***************/
 
 /*# sourceMappingURL=behabitat.css.map */
