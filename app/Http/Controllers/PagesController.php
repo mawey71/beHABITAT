@@ -18,13 +18,28 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function home()
-    {
+    public function home() {
     	return view('home');
     }
 
-    public function about()
-    {
+    public function about() {
     	return view('about');
     }
+
+    public function registroCliente() {
+        return view('auth.registroCliente');
+    }
+
+    public function registroProveedor() {
+        return view('auth.registroProveedor');
+    }
+
+    public function registrarCliente() {
+        return view('auth.registrarCliente');
+    }
+
+    public function registrarProveedor() {
+        return view('auth.registrarProveedor');
+    }
+
 }

@@ -27,7 +27,7 @@
 Route::group(['middleware' => 'web'], function () {
 
     Route::get('/', 'PagesController@welcome');
-    
+
     Route::get('home',[
         'as'   => 'home',
         'uses' => 'PagesController@home'
@@ -44,6 +44,11 @@ Route::group(['middleware' => 'web'], function () {
         'uses' => 'EmailController@mostrarForm'
     ]);
     Route::post('contacto', 'EmailController@enviarEmail');
+
+    Route::get('registroCliente', 'PagesController@registroCliente');
+    Route::get('registroProveedor', 'PagesController@registroProveedor');
+    Route::post('registroCliente', 'PagesController@registrarCliente');
+    Route::post('registroProveedor', 'PagesController@registrarProveedor');
 
 });
 

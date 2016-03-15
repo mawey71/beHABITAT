@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => behabitat\Models\User::class,
+            'model' => behabitat\User::class,
         ],
 
         // 'users' => [

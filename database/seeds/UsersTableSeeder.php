@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-    	//DB::table('users')->truncate(); // OJO: al ser foreign-key no funciona
+    	DB::table('users')->delete(); 
 
         DB::table('users')->insert(array(
         	'username' 	=> 'mawey',
@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
         	'updated_at' => '2016-02-10 17:13:38',
         ));
 
-        factory(App\User::class, 30)->create([
+        factory(behabitat\User::class, 30)->create([
         	'remember_token' => NULL
         ]);
 

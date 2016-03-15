@@ -2,7 +2,7 @@
 
 namespace behabitat\Http\Controllers\Auth;
 
-use behabitat\Models\User;
+use behabitat\User;
 use Validator;
 use behabitat\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
