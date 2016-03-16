@@ -10,7 +10,8 @@ use Illuminate\Database\Eloquent\SoftDeletes; //para los softdeletes
 class User extends Authenticatable
 {
     use SoftDeletes;
-
+    
+    protected $table = 'users';
     protected $dates = ['deleted_at'];
     /**
      * The attributes that are mass assignable.

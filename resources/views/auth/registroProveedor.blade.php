@@ -12,14 +12,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Soy un nuevo proveedor</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/registrarProveedor') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/registroProveedor') }}">
                         {!! csrf_field() !!}
                         <input type="hidden" name="rol" value="proveedor">
                         <div class="form-group{{ $errors->has('razon_social') ? ' has-error' : '' }}">
                             <label class="col-md-4 control-label" id="etiqueta-nombre">razón social</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="nombre" value="{{ old('razon_social') }}">
+                                <input type="text" class="form-control" name="razon_social" value="{{ old('razon_social') }}">
 
                                  @if ($errors->has('razon_social'))
                                     <span class="help-block">

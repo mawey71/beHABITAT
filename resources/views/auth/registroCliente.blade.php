@@ -12,7 +12,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Soy un nuevo cliente</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/registrarCliente') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/registroCliente') }}">
                         {!! csrf_field() !!}
                         <input type="hidden" name="rol" value="cliente">
                         @include('auth.partials.formRegistro')

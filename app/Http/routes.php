@@ -45,10 +45,10 @@ Route::group(['middleware' => 'web'], function () {
     ]);
     Route::post('contacto', 'EmailController@enviarEmail');
 
-    Route::get('registroCliente', 'PagesController@registroCliente');
-    Route::get('registroProveedor', 'PagesController@registroProveedor');
-    Route::post('registroCliente', 'PagesController@registrarCliente');
-    Route::post('registroProveedor', 'PagesController@registrarProveedor');
+    Route::get('registroCliente', 'RegistroController@mostrarFormRegistroCliente');
+    Route::get('registroProveedor', 'RegistroController@mostrarFormRegistroProveedor');
+    Route::post('registroCliente', 'RegistroController@registroCliente');
+    Route::post('registroProveedor', 'RegistroController@registroProveedor');
 
 });
 
