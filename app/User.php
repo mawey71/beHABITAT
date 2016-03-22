@@ -10,8 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes; //para los softdeletes
 class User extends Authenticatable
 {
     use SoftDeletes;
-    
-    protected $table = 'users';
+
     protected $dates = ['deleted_at'];
     /**
      * The attributes that are mass assignable.
@@ -19,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password'
+        'username', 'email', 'password',
     ];
 
     /**
@@ -28,7 +27,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token'
+        'password', 'remember_token',
     ];
 
     public function perfil()

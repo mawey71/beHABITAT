@@ -14,6 +14,10 @@ class CrearTablaProfiles extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')
+                ->references('id')->on('users')
+                ->onDelete('cascade');
             $table->enum('rol', ['cliente', 'proveedor']);
             $table->string('nombre');
             $table->string('primer_apellido');
@@ -27,14 +31,12 @@ class CrearTablaProfiles extends Migration
             $table->string('codigo_postal');
             $table->string('telefono')->nullable();
             $table->string('telefono_movil')->nullable();
-            $table->integer('user_id')->unsigned();
+
 
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('user_id')
-                ->references('id')->on('users')
-                ->onDelete('cascade');
+            
 
 
         });

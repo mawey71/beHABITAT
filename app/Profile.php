@@ -3,9 +3,8 @@
 namespace behabitat;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes; //para los softdeletes
 
-class Profile extends Model
+class Perfil extends Model
 {
 	use SoftDeletes;
 
@@ -14,10 +13,10 @@ class Profile extends Model
 	protected $table = 'profiles';
 
 	protected $fillable = [
-        'rol', 'nombre', 'primer_apellido', 'segundo_apellido', 'nif', 'razon_social', 'cif', 'direccion', 'localidad', 'provincia', 'codigo_postal', 'telefono', 'telefono_movil'
+        'rol', 'nombre', 'primer_apellido', 'segundo_apellido', 'nif', 'direccion', 'localidad', 'provincia', 'codigo_postal', 'telefono', 'telefono_movil'
     ];
 
-    protected $hidden = ['rol'];
+    protected $hidden = [];
 
     public function user()
     {

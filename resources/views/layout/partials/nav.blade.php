@@ -78,17 +78,7 @@
                     </li>
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="registroCliente">Como cliente</a>
-                                </li>
-                                <li>
-                                    <a href="registroProveedor">Como proveedor</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ url('/register') }}">Registro</a></li>
                     @else
                         <li><a href="{{ route('admin.home') }}">Administración</a></li>
                         <li class="dropdown">
@@ -97,7 +87,7 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/perfil') }}">Mi perfil</a></li>            
+                                <li><a href="{{ url('/perfil/' . Auth::user()->id) }}">Mi perfil</a></li>            
                                 <li><a href="{{ url('/logout') }}">Logout</a></li>
                             </ul>
                         </li>

@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use behabitat\Http\Requests;
 use behabitat\Http\Controllers\Controller;
 
-
 class PagesController extends Controller
 {
 	public function __construct()
@@ -19,12 +18,13 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function home() {
+    public function home()
+    {
     	return view('home');
     }
 
-    public function about() {
+    public function about()
+    {
     	return view('about');
     }
-
 }

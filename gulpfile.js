@@ -30,6 +30,6 @@ elixir(function(mix) {
         'resources/assets/js/app.js'
     ],'public/assets/js/behabitat.js');
 
-    mix.version(['public/assets/css/behabitat.css','public/assets/js/behabitat.js']);
+    //mix.version(['public/assets/css/behabitat.css','public/assets/js/behabitat.js']);
 
 });

@@ -27,35 +27,36 @@
 Route::group(['middleware' => 'web'], function () {
 
     Route::get('/', 'PagesController@welcome');
-
-    Route::get('home',[
+    
+    Route::get('/home', [
         'as'   => 'home',
         'uses' => 'PagesController@home'
     ]);
 
-    Route::get('about', [
+    Route::get('/about', [
         'as'   => 'about',
         'uses' => 'PagesController@about'
     ]);
 
 
-	Route::get('contacto', [
+	Route::get('/contacto', [
     	'as'   => 'contacto',
         'uses' => 'EmailController@mostrarForm'
     ]);
-    Route::post('contacto', 'EmailController@enviarEmail');
-
-    Route::get('registroCliente', 'RegistroController@mostrarFormRegistroCliente');
-    Route::get('registroProveedor', 'RegistroController@mostrarFormRegistroProveedor');
-    Route::post('registroCliente', 'RegistroController@registroCliente');
-    Route::post('registroProveedor', 'RegistroController@registroProveedor');
+    Route::post('/contacto', 'EmailController@enviarEmail');
 
 });
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('admin/home', [
+    Route::get('/admin/home', [
         'as' => 'admin.home', 
         'uses' => 'AdminController@home']);
+
+    Route::get('/perfil/{id}', [
+        'as'    => 'perfil',
+        'uses'  => 'PerfilController@index'
+    ]);
+
 });
